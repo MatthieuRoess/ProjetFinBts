@@ -1,0 +1,173 @@
+:root {
+  --main-color: #24305E;
+  --second-color: #EDF5E1;
+  --last-color: #FC4445;
+}
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--main-color);
+    color: var(--second-color);
+  }
+
+  /*navbar */
+  nav {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1.5rem 3rem; 
+    background: var(--main-color); 
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex; 
+    list-style: none; 
+  }
+  
+  nav li {
+    padding-left: 4rem; 
+    
+  }
+  
+  nav a {
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50%;
+    color: var(--second-color);
+  }
+
+  a i {
+  color: #EDF5E1;
+
+  }
+  i{
+    font-size: 20px;
+  }
+
+  nav a:hover{
+    background: var(--last-color);
+    border-color: black solid 1px;
+  }
+
+  nav h2{
+    letter-spacing: 2px;
+  }
+
+  @media screen and (max-width: 900px) {
+    nav li{
+      padding-left: 1.5rem;
+    }
+    i{ 
+      font-size: 20px;
+    }
+    nav{
+      flex-direction: column-reverse;
+      gap: 15px;
+    }
+  }
+
+  /*navbar */
+
+  /*stage*/
+
+
+  
+
+  @media screen and (max-width: 1400px) {
+    body #mcdOnf{
+      width: 1000px;
+      height: 900px;
+    }
+    body #carteOnf{
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    body #mcdOnf{
+      width: 500px;
+      height: 300px;
+    }
+  }
+
+  @media screen and (max-width: 1230px) {
+    .videoCommande video{
+      width: 500px;
+    }
+  }
+  
+
+  
+  h1{
+    color: var(--last-color);
+    margin-top: 70px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  .container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .texte1{
+    text-align: center;
+  }
+
+  .texte1 p{
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  span{
+    color: var(--last-color);
+    
+  }
+  
+  h3{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+
+    color: var(--last-color);
+  }
+
+  #stage1{
+    font-size: 25px;
+    
+  }
+
+  #carteOnf{
+    border: solid 1px var(--last-color);
+    border-radius: 15px;
+    margin-top: 30px;
+  }
+
+  #mcdOnf{
+    border: solid 1px var(--last-color);
+    border-radius: 15px;
+    margin-top: 30px;
+  }
+
+  .videoCommande{
+    margin-top: 30px;
+  }
+
+  .videoCommande video{
+    border: var(--last-color) 1px solid;
+    border-radius: 15px;
+  }
+
+
+  /*stage */

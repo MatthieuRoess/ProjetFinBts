@@ -1,0 +1,231 @@
+:root {
+  --main-color: #24305E;
+  --second-color: #EDF5E1;
+  --last-color: #FC4445;
+}
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--main-color);
+    color: var(--second-color);
+  }
+
+  /*navbar */
+  nav {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1.5rem 3rem; 
+    background: var(--main-color); 
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex; 
+    list-style: none; 
+  }
+  
+  nav li {
+    padding-left: 4rem; 
+    
+  }
+  
+  nav a {
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50%;
+    color: var(--second-color);
+  }
+
+  a i {
+  color: #EDF5E1;
+
+  }
+  i{
+    font-size: 20px;
+  }
+
+  nav a:hover{
+    background: var(--last-color);
+    border-color: black solid 1px;
+  }
+
+  nav h2{
+    letter-spacing: 2px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    nav li{
+      padding-left: 1.5rem;
+    }
+    i{ 
+      font-size: 20px;
+    }
+    nav{
+      flex-direction: column-reverse;
+      gap: 15px;
+    }
+    .avis{
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .avis .avantage, .avis .inconvenient{
+      width: 100%;
+      border: none;
+    }
+
+    .avis .inconvenient{
+      margin-top: 15px;
+    }
+
+  }
+
+  
+  /*navbar */
+
+
+  /*description react */
+
+  .reactDesc{
+    text-align: center;
+  }
+  h1{
+    color: var(--last-color);
+    margin-top: 70px;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  #desc{
+    font-size: 25px;
+    
+  }
+
+  span{
+    color: var(--last-color);
+    
+  }
+
+  p{
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+
+  #logoReact{
+    font-size: 40px;
+    animation:rotate 4s linear infinite;
+
+
+  }
+
+  @keyframes rotate {
+    100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+  }
+
+  .avis{
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+
+  .avis h2{
+    color: var(--last-color);
+  }
+  .avantage{
+    width: 50%;
+    border-right: 2px var(--second-color) solid;
+  }
+
+  .inconvenient{
+    width: 50%;
+  }
+
+  #liste{
+    margin-top: 20px;
+  }
+  #liste li{
+    line-height: 30px;
+    list-style: none;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
+  
+
+
+  /*description react */
+
+  /*projet*/
+  .project{
+    text-align: center;
+    margin-top: 50px;
+  }
+  .project h2{
+    color: var(--last-color);
+  }
+  /*projet*/
+
+  /*comparaison*/
+  
+  .comparaison{
+    text-align: center;
+    margin-top: 50px;
+  }
+  .comparaison h2{
+    color: var(--last-color);
+  }
+
+  span{
+    color: var(--last-color);
+  }
+  /*comparaison*/
+
+  /*site*/
+    .siteUtil{
+      margin-top: 50px;
+      
+    }
+
+    .siteUtil h2{
+      text-align: center;
+      color: var(--last-color);
+      margin-bottom: 50px;
+    }
+
+    .siteUtil .img{
+      width: 100%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .siteUtil .img img{
+      height: 300px;
+      margin: -5px;
+      border: solid 1px var(--last-color);
+      aspect-ratio: 1.5;
+    }
+
+    @media screen and (max-width: 1800px) {
+      .siteUtil .img{
+        flex-direction: column;
+      }
+    }
+
+
+  /*site*/
